@@ -2,7 +2,6 @@
 Rocket is a very minimalistic 2d game experiment built with `pyglet`.  
 Currently, in Rocket you fly a lonely rocket with no purpose in the infinite darkness of space. However, game features and objectives are on the way!
 
-
 ## Prerequisites
 The following python packages are required to run Rocket:
 * `pyglet 1.2.4`
@@ -13,8 +12,6 @@ The game is launched by:
 ```sh
 $ python3 main.py
 ```
-
-
 
 ## Controls
 | Key           | Function      |
@@ -35,6 +32,5 @@ Some ideas to implement:
 * :trophy: Add levels with score tracking
 
 ## Built with
-
 * [pyglet](https://pypi.python.org/pypi/pyglet/1.2.4) - Cross-platform windowing and multimedia library
 * [euclid3](https://pypi.python.org/pypi/euclid3) - 2D and 3D vector, matrix, quaternion and geometry module

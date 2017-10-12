@@ -14,40 +14,40 @@ player.scale = 1
 
 @game_window.event
 def on_draw():
-	"""Draws game objects on screen."""
-	game_window.clear()
-	player.draw()
-	#player.hitbox.draw_corners()
-	
+    """Draws game objects on screen."""
+    game_window.clear()
+    player.draw()
+    #player.hitbox.draw_corners()
+    
 @game_window.event
 def on_key_press(symbol, modifier):
-	"""Registers player key presses."""
-	if symbol == key.UP:
-		player.UP = True
-	elif symbol == key.RIGHT:
-		player.RIGHT = True
-	elif symbol == key.DOWN:
-		player.DOWN = True
-	elif symbol == key.LEFT:
-		player.LEFT = True
-	elif symbol == key.SPACE:
-		player.blink()
-
+    """Registers player key presses."""
+    if symbol == key.UP:
+        player.UP = True
+    elif symbol == key.RIGHT:
+        player.RIGHT = True
+    elif symbol == key.DOWN:
+        player.DOWN = True
+    elif symbol == key.LEFT:
+        player.LEFT = True
+    elif symbol == key.SPACE:
+        player.blink()
+        
 @game_window.event
 def on_key_release(symbol, modifier):
-	"""Registers player key releases."""
-	if symbol == key.UP:
-		player.UP = False
-	elif symbol == key.RIGHT:
-		player.RIGHT = False
-	elif symbol == key.DOWN:
-		player.DOWN = False
-	elif symbol == key.LEFT:
-		player.LEFT = False
-
+    """Registers player key releases."""
+    if symbol == key.UP:
+        player.UP = False
+    elif symbol == key.RIGHT:
+        player.RIGHT = False
+    elif symbol == key.DOWN:
+        player.DOWN = False
+    elif symbol == key.LEFT:
+        player.LEFT = False
+        
 # Game engine clock for game updates
 pyglet.clock.schedule_interval(player.update, 1/120)
 
 if __name__ == "__main__":
-	pyglet.app.run()
+    pyglet.app.run()
 
